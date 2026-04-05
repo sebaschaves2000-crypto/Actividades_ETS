@@ -1,0 +1,31 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Diagrama de Clases" id="qaBl9mkQpmwGD6ghZ1NF">
+    <mxGraphModel dx="1209" dy="535" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sRn9US4SRH7BRT02BWh3-2" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;" value="Empleado&#xa;----------------&#xa;- dni: String&#xa;- nombre: String&#xa;----------------&#xa;+ getNombre(): String" vertex="1">
+          <mxGeometry height="140" width="200" x="110" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="sRn9US4SRH7BRT02BWh3-3" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;" value="Vendedor&#xa;----------------&#xa;- numeroVendedor: int&#xa;- zona: String&#xa;----------------&#xa;+ getNumeroVendedor(): int" vertex="1">
+          <mxGeometry height="140" width="220" x="360" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sRn9US4SRH7BRT02BWh3-4" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;" value="Jefe&#xa;----------------&#xa;- salario: double&#xa;----------------&#xa;+ getSalario(): double" vertex="1">
+          <mxGeometry height="120" width="220" x="360" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="sRn9US4SRH7BRT02BWh3-5" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;" value="Poliza&#xa;----------------&#xa;- numeroPoliza: int&#xa;- importe: double&#xa;- beneficiario: String&#xa;- fechaVenta: Date&#xa;----------------&#xa;+ getBeneficiario(): String" vertex="1">
+          <mxGeometry height="180" width="260" x="660" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="sRn9US4SRH7BRT02BWh3-6" edge="1" parent="1" source="sRn9US4SRH7BRT02BWh3-3" style="endArrow=block;endFill=0;" target="sRn9US4SRH7BRT02BWh3-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sRn9US4SRH7BRT02BWh3-7" edge="1" parent="1" source="sRn9US4SRH7BRT02BWh3-4" style="endArrow=block;endFill=0;" target="sRn9US4SRH7BRT02BWh3-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sRn9US4SRH7BRT02BWh3-8" edge="1" parent="1" source="sRn9US4SRH7BRT02BWh3-3" style="endArrow=none;" target="sRn9US4SRH7BRT02BWh3-5" value="1 .. 0..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
